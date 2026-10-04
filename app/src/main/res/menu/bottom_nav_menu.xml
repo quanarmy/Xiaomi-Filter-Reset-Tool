@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_reset"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/tab_reset" />
+    <item
+        android:id="@+id/nav_clone"
+        android:icon="@drawable/ic_chip"
+        android:title="@string/tab_clone" />
+    <item
+        android:id="@+id/nav_calc"
+        android:icon="@drawable/ic_calculator"
+        android:title="@string/tab_calc" />
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/ic_history"
+        android:title="@string/tab_history" />
+    <item
+        android:id="@+id/nav_guide"
+        android:icon="@drawable/ic_guide"
+        android:title="@string/tab_guide" />
+</menu>

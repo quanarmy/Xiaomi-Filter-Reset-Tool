@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Xiaomi Filter Reset</string>
+    <string name="app_subtitle">NFC RFID Filter Unlock Tool</string>
+
+    <!-- Navigation Tabs -->
+    <string name="tab_reset">Reset &amp; Scan</string>
+    <string name="tab_clone">Clone Tag</string>
+    <string name="tab_calc">Keygen &amp; APDU</string>
+    <string name="tab_history">Devices &amp; Logs</string>
+    <string name="tab_guide">Guide</string>
+
+    <!-- Top Bar & NFC Status -->
+    <string name="nfc_ready">NFC: Ready</string>
+    <string name="nfc_disabled">NFC Disabled (Tap to enable)</string>
+    <string name="nfc_unsupported">No NFC Hardware</string>
+    <string name="nfc_ready_hint">Hold top-back of phone near filter base</string>
+    <string name="nfc_disabled_hint">Tap here to enable NFC in Settings</string>
+    <string name="nfc_unsupported_hint">You can still use the manual APDU generator</string>
+
+    <!-- Scan Banner -->
+    <string name="scan_prompt_title">Hold phone near filter NFC tag</string>
+    <string name="scan_prompt_subtitle">Place the top-back of your phone against the bottom of the filter to read &amp; reset</string>
+    <string name="auto_reset_switch">⚡ Auto-reset immediately on tag tap</string>
+
+    <!-- Filter Card Details -->
+    <string name="filter_no_data">No tag scanned yet</string>
+    <string name="device_unnamed">Unnamed Purifier</string>
+    <string name="filter_uid">UID (Serial):</string>
+    <string name="filter_password">Password (PWD):</string>
+    <string name="filter_work_time">Block 08 (Time):</string>
+    <string name="filter_product_id">Product ID:</string>
+    <string name="filter_life_new">100% (Brand New)</string>
+    <string name="filter_life_used">In Use</string>
+
+    <!-- Action Buttons -->
+    <string name="btn_reset_now">⚡ RESET TO 100% NOW</string>
+    <string name="btn_custom_value">Custom Usage %</string>
+    <string name="btn_read_again">Re-read Tag</string>
+
+    <!-- Status Log -->
+    <string name="status_waiting_tag">Status: Waiting for NFC tag...</string>
+    <string name="status_reading">Reading NFC tag data...</string>
+    <string name="status_resetting">Sending unlock &amp; resetting Block 08...</string>
+    <string name="status_writing_custom">Writing custom value to Block 08...</string>
+    <string name="status_cloning_blank">Writing data &amp; configuring auth on blank tag...</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_custom_title">Write Custom Filter Life</string>
+    <string name="dialog_custom_desc">Drag slider to set remaining life percentage or enter custom 4-byte Hex for Block 08</string>
+    <string name="dialog_custom_hex_hint">Block 08 Hex Value (4 bytes)</string>
+    <string name="btn_write_value">Write This Value</string>
+    <string name="dialog_success_title">Reset Successful!</string>
+    <string name="dialog_success_desc">The filter has been restored to 100% life (Block 08 = 00000000).\n\nYou can now place the filter back into your purifier and enjoy clean air!</string>
+    <string name="btn_great">Awesome</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="dialog_alias_title">Set Device Name</string>
+    <string name="dialog_alias_desc">Assign a friendly name for this filter (UID: %1$s):</string>
+    <string name="dialog_alias_hint">e.g., Living Room Purifier, 4 Pro Bedroom...</string>
+    <string name="btn_save_name">Save Name</string>
+
+    <string name="dialog_clear_title">Confirm Clear</string>
+    <string name="dialog_clear_desc">Are you sure you want to delete all saved devices and change logs?</string>
+    <string name="btn_clear_all">Clear All</string>
+
+    <!-- Clone / Blank Tag -->
+    <string name="clone_title">Initialize Blank NTAG (OEM / 3rd Party Filter)</string>
+    <string name="clone_desc">For replacement filters without RFID. Stick a cheap blank NTAG213/215/216 sticker on the filter base, select type, and tap phone.</string>
+    <string name="select_filter_type">Select Filter Model to Emulate:</string>
+    <string name="type_regular">Standard HEPA / Gray (00003033)</string>
+    <string name="type_formaldehyde">Anti-Formaldehyde / Green (00003031)</string>
+    <string name="type_antibacterial">Anti-Bacterial / Purple (00004130)</string>
+    <string name="clone_specs_info">• Block 04 (Factory ID): 00004150\n• Block 05 (Product ID): Matches selected type\n• Block 06 (Time): 00200422\n• Block 07 (Serial): C783D7B7\n• Block 08 (Work Time): 00000000 (100%)\n• PWD &amp; PACK: Calculated from tag UID\n• Protection lock AUTH0 = 04</string>
+    <string name="btn_write_blank_tag">🏷️ Write &amp; Lock Blank Tag</string>
+    <string name="blank_tag_hint">Select filter type, tap button above, then touch blank NFC tag to phone.</string>
+
+    <!-- Keygen / Calc Tab -->
+    <string name="calc_title">UID Keygen &amp; APDU Commands</string>
+    <string name="calc_desc">Calculate SHA-1 derived password and generate APDU commands for NFC Tools, Flipper Zero, Proxmark, Chameleon Ultra.</string>
+    <string name="input_uid_hint">Enter tag UID (14 hex chars, e.g. 04A03CAA1E7080)</string>
+    <string name="btn_calculate">Calculate</string>
+    <string name="btn_paste">Paste</string>
+    <string name="label_pwd_result">Calculated Password (4 bytes):</string>
+    <string name="label_nfc_tools">NFC Tools Command (Advanced NFC):</string>
+    <string name="label_flipper">Flipper Zero Command (nfc apdu):</string>
+    <string name="label_proxmark">Proxmark3 / Chameleon Command:</string>
+
+    <!-- History Tab -->
+    <string name="history_title">Device Manager &amp; History</string>
+    <string name="chip_devices">📱 My Devices (%1$d)</string>
+    <string name="chip_logs">📜 Change Logs</string>
+    <string name="devices_empty">No devices saved yet.\nWhenever you scan or reset a filter tag, it is automatically cataloged here for one-click re-resetting!</string>
+    <string name="logs_empty">No change logs recorded yet.</string>
+    <string name="filter_banner_prefix">Filtering history for: %1$s</string>
+    <string name="clear_filter">Show all ✕</string>
+    <string name="btn_reset_this_device">⚡ Reset This Device</string>
+    <string name="btn_view_logs">History</string>
+    <string name="btn_restore_state">Restore This State</string>
+    <string name="label_reset_count">Reset count: %1$d</string>
+    <string name="label_last_reset">Last: %1$s</string>
+    <string name="label_life_transition">Life: %1$d%% ➔ %2$d%%</string>
+
+    <!-- Toasts & Notifications -->
+    <string name="toast_copied">Copied %1$s to clipboard</string>
+    <string name="toast_tag_read_success">Filter tag read successfully!</string>
+    <string name="toast_touch_tag_to_reset">Touch filter NFC tag to phone to Reset</string>
+    <string name="toast_touch_tag_to_read">Touch filter NFC tag to phone to Read</string>
+    <string name="toast_touch_blank_tag">Touch blank NTAG sticker to phone to write</string>
+    <!-- Guide Tab -->
+    <string name="guide_title_position">📖 NFC Tag Placement Guide</string>
+    <string name="guide_desc_position">1. NFC Tag Placement on Filter:\n• Most models (2S, 3, 3H, 4, 4 Pro, Pro H, MAX): The RFID chip is located at the CIRCULAR BOTTOM BASE of the filter.\n• Xiaomi Smart Air Purifier ELITE: The chip is placed on the TOP PLASTIC RIM (underneath the replacement reminder text).\n\n2. How to scan with phone:\n• Enable NFC in your phone Settings.\n• Hold the upper back of your phone directly against the tag location.\n• Hold steady for 1-2 seconds until phone vibrates with confirmation.</string>
+    <string name="guide_title_compat">✅ Tested &amp; Verified Models</string>
+    <string name="guide_desc_compat">• Xiaomi Smart Air Purifier 4 Pro\n• Xiaomi Smart Air Purifier 4\n• Xiaomi Smart Air Purifier 4 Lite (with tag)\n• Xiaomi Smart Air Purifier 4 Compact\n• Xiaomi Smart Air Purifier Elite\n• Xiaomi Smart Air Purifier Ultra / Ultra Enhanced\n• Xiaomi Mi Air Purifier 3 / 3H / 3C\n• Xiaomi Mi Air Purifier 2 / 2S / 2H\n• Xiaomi Mi Air Purifier Pro / Pro H\n• Xiaomi Mi Air Purifier MAX\n• Mijia Smart Air Purifier 5 / 5s / 6\n• Smartmi Air Purifier 1</string>
+    <string name="guide_title_tech">💡 Technical DRM Breakdown</string>
+    <string name="guide_desc_tech" formatted="false">Xiaomi air purifiers track filter runtime by writing elapsed operational seconds/hours to Block 08 of an NTAG RFID chip. When the threshold is reached, the machine locks out the filter and warns 0% even if the filter element is clean.\n\nThe tag is protected by NTAG password authentication (PWD_AUTH command 0x1B). By taking the SHA-1 hash of the 7-byte UID, we calculate the exact 4-byte password. This tool authenticates with the chip and writes 00000000 to Block 08, restoring filter life back to 100%!</string>
+</resources>

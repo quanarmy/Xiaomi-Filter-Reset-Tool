@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Xiaomi Filter Reset</string>
+    <string name="app_subtitle">Công Cụ Reset Lõi Lọc NFC Xiaomi</string>
+
+    <!-- Navigation Tabs -->
+    <string name="tab_reset">Reset &amp; Quét</string>
+    <string name="tab_clone">Tạo Thẻ Mới</string>
+    <string name="tab_calc">Tính Password</string>
+    <string name="tab_history">Thiết Bị &amp; Lịch Sử</string>
+    <string name="tab_guide">Hướng Dẫn</string>
+
+    <!-- Top Bar & NFC Status -->
+    <string name="nfc_ready">NFC: Sẵn Sàng</string>
+    <string name="nfc_disabled">NFC Đang Tắt (Bấm để bật)</string>
+    <string name="nfc_unsupported">Không có phần cứng NFC</string>
+    <string name="nfc_ready_hint">Đưa mặt lưng điện thoại lại gần đáy lõi lọc</string>
+    <string name="nfc_disabled_hint">Nhấn vào đây để bật NFC trong cài đặt</string>
+    <string name="nfc_unsupported_hint">Bạn vẫn có thể dùng công cụ tính APDU thủ công</string>
+
+    <!-- Scan Banner -->
+    <string name="scan_prompt_title">Chạm thẻ NFC ở đáy lõi lọc</string>
+    <string name="scan_prompt_subtitle">Đưa mặt lưng điện thoại sát vào đáy lõi lọc để tự động đọc và reset</string>
+    <string name="auto_reset_switch">⚡ Tự động Reset ngay khi chạm thẻ</string>
+
+    <!-- Filter Card Details -->
+    <string name="filter_no_data">Chưa có dữ liệu thẻ</string>
+    <string name="device_unnamed">Chưa đặt tên máy</string>
+    <string name="filter_uid">UID (Serial):</string>
+    <string name="filter_password">Mật khẩu (PWD):</string>
+    <string name="filter_work_time">Block 08 (Thời gian):</string>
+    <string name="filter_product_id">Product ID:</string>
+    <string name="filter_life_new">100% (Mới)</string>
+    <string name="filter_life_used">Đang dùng</string>
+
+    <!-- Action Buttons -->
+    <string name="btn_reset_now">⚡ RESET VỀ 100% NGAY</string>
+    <string name="btn_custom_value">Ghi % Tuỳ Chọn</string>
+    <string name="btn_read_again">Đọc Lại Thẻ</string>
+
+    <!-- Status Log -->
+    <string name="status_waiting_tag">Trạng thái: Đang chờ chạm thẻ NFC...</string>
+    <string name="status_reading">Đang đọc dữ liệu chip NFC...</string>
+    <string name="status_resetting">Đang gửi lệnh mở khóa và Reset Block 08...</string>
+    <string name="status_writing_custom">Đang ghi giá trị tuỳ chọn vào Block 08...</string>
+    <string name="status_cloning_blank">Đang ghi dữ liệu và thiết lập mật khẩu bảo vệ lên thẻ trắng...</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_custom_title">Ghi Tuổi Thọ Tuỳ Chọn</string>
+    <string name="dialog_custom_desc">Kéo thanh trượt để chọn phần trăm tuổi thọ hoặc nhập giá trị Hex cho Block 08</string>
+    <string name="dialog_custom_hex_hint">Giá trị Hex Block 08 (4 bytes)</string>
+    <string name="btn_write_value">Ghi Giá Trị Này</string>
+    <string name="dialog_success_title">Reset Thành Công!</string>
+    <string name="dialog_success_desc">Lõi lọc đã được đưa về 100% tuổi thọ (Block 08 = 00000000).\n\nBạn có thể lắp lại vào máy lọc và sử dụng bình thường!</string>
+    <string name="btn_great">Tuyệt Vời</string>
+    <string name="cancel">Hủy</string>
+
+    <string name="dialog_alias_title">Đặt Tên Gợi Nhớ Thiết Bị</string>
+    <string name="dialog_alias_desc">Gán tên cho thẻ lõi lọc (UID: %1$s):</string>
+    <string name="dialog_alias_hint">VD: Máy phòng khách, Lõi 4 Pro Tầng 2...</string>
+    <string name="btn_save_name">Lưu Tên</string>
+
+    <string name="dialog_clear_title">Xác Nhận Xóa</string>
+    <string name="dialog_clear_desc">Bạn có chắc muốn xóa toàn bộ lịch sử thiết bị và nhật ký thay đổi?</string>
+    <string name="btn_clear_all">Xóa Hết</string>
+
+    <!-- Clone / Blank Tag -->
+    <string name="clone_title">Ghi Thẻ Trắng Mới (NTAG213/215/216)</string>
+    <string name="clone_desc">Dành cho lõi lọc ngoài hoặc mất chip zin. Mua sticker NFC NTAG trắng dán vào đáy lọc, chọn loại lọc và chạm vào điện thoại.</string>
+    <string name="select_filter_type">Chọn loại lõi lọc muốn giả lập:</string>
+    <string name="type_regular">Lọc Chuẩn / HEPA (00003033)</string>
+    <string name="type_formaldehyde">Lọc Formaldehyde / Xanh Lá (00003031)</string>
+    <string name="type_antibacterial">Lọc Kháng Khuẩn / Tím (00004130)</string>
+    <string name="clone_specs_info">• Block 04 (Factory ID): 00004150\n• Block 05 (Product ID): Theo loại lọc chọn\n• Block 06 (Time): 00200422\n• Block 07 (Serial): C783D7B7\n• Block 08 (Work Time): 00000000 (100%)\n• Mật khẩu PWD &amp; PACK: Tự tính từ UID thẻ\n• Khóa bảo vệ AUTH0 = 04</string>
+    <string name="btn_write_blank_tag">🏷️ Ghi Dữ Liệu Lên Thẻ Trắng</string>
+    <string name="blank_tag_hint">Chọn loại lọc và nhấn nút trên, sau đó chạm thẻ trắng vào điện thoại.</string>
+
+    <!-- Keygen / Calc Tab -->
+    <string name="calc_title">Tính Toán Password &amp; Lệnh APDU</string>
+    <string name="calc_desc">Chuyển đổi UID bất kỳ sang Password và lệnh gửi cho NFC Tools, Flipper Zero, Chameleon Ultra, Proxmark3.</string>
+    <string name="input_uid_hint">Nhập UID thẻ (14 ký tự hex, VD: 04A03CAA1E7080)</string>
+    <string name="btn_calculate">Tính Toán</string>
+    <string name="btn_paste">Dán</string>
+    <string name="label_pwd_result">Mật khẩu tạo ra (4 bytes):</string>
+    <string name="label_nfc_tools">Lệnh cho App NFC Tools (Advanced NFC):</string>
+    <string name="label_flipper">Lệnh cho Flipper Zero (nfc apdu):</string>
+    <string name="label_proxmark">Lệnh cho Proxmark3 / Chameleon:</string>
+
+    <!-- History Tab -->
+    <string name="history_title">Quản Lý Thiết Bị &amp; Lịch Sử</string>
+    <string name="chip_devices">📱 Thiết Bị Của Tôi (%1$d)</string>
+    <string name="chip_logs">📜 Nhật Ký Thay Đổi</string>
+    <string name="devices_empty">Chưa có thiết bị nào được lưu.\nKhi bạn reset hoặc quét thẻ lọc, máy sẽ tự động lưu vào danh sách này để bạn có thể reset lại bất cứ lúc nào!</string>
+    <string name="logs_empty">Chưa có nhật ký thay đổi nào.</string>
+    <string name="filter_banner_prefix">Đang lọc nhật ký: %1$s</string>
+    <string name="clear_filter">Xem tất cả ✕</string>
+    <string name="btn_reset_this_device">⚡ Reset Lại Thiết Bị Này</string>
+    <string name="btn_view_logs">Lịch Sử</string>
+    <string name="btn_restore_state">Khôi Phục Trạng Thái Này</string>
+    <string name="label_reset_count">Đã reset: %1$d lần</string>
+    <string name="label_last_reset">Lần cuối: %1$s</string>
+    <string name="label_life_transition">Tuổi thọ: %1$d%% ➔ %2$d%%</string>
+
+    <!-- Toasts & Notifications -->
+    <string name="toast_copied">Đã sao chép %1$s vào bộ nhớ tạm</string>
+    <string name="toast_tag_read_success">Đã đọc thành công thẻ lõi lọc!</string>
+    <string name="toast_touch_tag_to_reset">Hãy chạm thẻ NFC vào điện thoại để Reset</string>
+    <string name="toast_touch_tag_to_read">Chạm thẻ NFC để đọc thông tin</string>
+    <string name="toast_touch_blank_tag">Chạm thẻ sticker trắng vào mặt lưng để ghi</string>
+    <!-- Guide Tab -->
+    <string name="guide_title_position">📖 Hướng Dẫn Vị Trí Chip NFC</string>
+    <string name="guide_desc_position">1. Vị trí chip NFC trên lọc:\n• Đa số dòng máy (2S, 3, 3H, 4, 4 Pro, Pro H, MAX): Chip nằm ở ĐÁY BỘ LỌC (mặt nhựa tròn bên dưới).\n• Riêng dòng Xiaomi Smart Air Purifier ELITE: Chip nằm ở ĐỈNH NHỰA TRÊN cùng của lõi lọc (ngay dưới dòng chữ cảnh báo thay lõi).\n\n2. Cách quét trên điện thoại:\n• Mở NFC trong Cài đặt của điện thoại.\n• Đặt phần trên mặt lưng điện thoại (nơi đặt ăng-ten NFC) sát vào chip.\n• Giữ nguyên điện thoại trong 1-2 giây cho đến khi có rung/thông báo thành công.</string>
+    <string name="guide_title_compat">✅ Danh Sách Model Đã Kiểm Tra Hoạt Động</string>
+    <string name="guide_desc_compat">• Xiaomi Smart Air Purifier 4 Pro\n• Xiaomi Smart Air Purifier 4\n• Xiaomi Smart Air Purifier 4 Lite (kèm tag)\n• Xiaomi Smart Air Purifier 4 Compact\n• Xiaomi Smart Air Purifier Elite\n• Xiaomi Smart Air Purifier Ultra / Ultra Enhanced\n• Xiaomi Mi Air Purifier 3 / 3H / 3C\n• Xiaomi Mi Air Purifier 2 / 2S / 2H\n• Xiaomi Mi Air Purifier Pro / Pro H\n• Xiaomi Mi Air Purifier MAX\n• Mijia Smart Air Purifier 5 / 5s / 6\n• Smartmi Air Purifier 1</string>
+    <string name="guide_title_tech">💡 Cơ Chế Kỹ Thuật (DRM Breakdown)</string>
+    <string name="guide_desc_tech" formatted="false">Máy lọc Xiaomi đếm thời gian sử dụng lõi lọc bằng cách ghi số giây/giờ vào Block 08 của chip RFID NTAG. Khi đạt ngưỡng, máy báo 0% và bắt thay lõi dù màng lọc còn sạch.\n\nChip được khóa bằng mật khẩu (PWD_AUTH lệnh 0x1B). Bằng cách băm SHA-1 của 7 byte UID thẻ, ta tính ra chính xác mật khẩu 4 byte. Tool này tự động xác thực và ghi giá trị 00000000 vào Block 08 để reset tuổi thọ lõi lọc về 100% vĩnh viễn!</string>
+</resources>
